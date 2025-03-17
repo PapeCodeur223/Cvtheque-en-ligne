@@ -352,18 +352,18 @@
                         <h2 class="mb-4">I'd love to hear from you.</h2>
                     </div>
                     <!-- form -->
-                    <form action="">
+                    <form name="contact" method="POST" data-netlify="true">
                         <div class="mb-3 animate-slide-left delay-1">
-                            <input type="text" class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white" placeholder="Name" required>
+                            <input type="text" class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white" placeholder="Name" name="name" required>
                         </div>
                         <div class="mb-3 animate-slide-right delay-1">
-                            <input type="email" class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white" placeholder="Email" required>
+                            <input type="email" class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white" placeholder="Email" name="email" required>
                         </div>
                         <div class="mb-3 animate-slide-left delay-1">
-                            <input type="tel" class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white" placeholder="Phone Number">
+                            <input type="tel" class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white" name="telephone" placeholder="Phone Number">
                         </div>
                         <div class="mb-3 animate-slide-right delay-1">
-                            <textarea name="message" id="" class="bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white form-control" placeholder="Message"></textarea>
+                            <textarea name="message" id="" class="bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white form-control" placeholder="Message" name="message"></textarea>
                         </div>
                         <button class="btn btn-primary animate-slide-left delay-1" type="submit">Envoyer</button>
                     </form>
