@@ -1,0 +1,162 @@
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Classe pour appliquer l'animation */
+.animate-slide-up {
+    opacity: 0; /* Initialement invisible */
+}
+
+/* Appliquer l'animation lorsque la classe "visible" est ajoutée */
+.animate-slide-up.visible {
+    animation: slideUp 1s ease-out forwards;
+}
+
+/* Délai pour chaque élément */
+.animate-slide-up.delay-1 { animation-delay: 0.2s; }
+.animate-slide-up.delay-2 { animation-delay: 0.4s; }
+.animate-slide-up.delay-3 { animation-delay: 0.6s; }
+.animate-slide-up.delay-4 { animation-delay: 0.8s; }
+
+
+
+/* Animation du haut vers le bas */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Classe pour appliquer l'animation */
+.animate-slide-down {
+    opacity: 0; /* Initialement invisible */
+}
+
+/* Appliquer l'animation lorsque la classe "visible" est ajoutée */
+.animate-slide-down.visible {
+    animation: slideDown 1s ease-out forwards;
+}
+
+/* Délai pour chaque élément */
+.animate-slide-down.delay-1 { animation-delay: 0.2s; }
+.animate-slide-down.delay-2 { animation-delay: 0.4s; }
+
+
+/* Animation de gauche vers la droite : le nom des classes utilisés animate-slide-right delay-1 */
+@keyframes slideRight {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Classe pour appliquer l'animation */
+.animate-slide-right {
+    opacity: 0; /* Initialement invisible */
+}
+
+/* Appliquer l'animation lorsque la classe "visible" est ajoutée */
+.animate-slide-right.visible {
+    animation: slideRight 1s ease-out forwards;
+}
+
+/* Délai pour chaque élément */
+.animate-slide-right.delay-1 { animation-delay: 0.2s; }
+.animate-slide-right.delay-2 { animation-delay: 0.4s; }
+.animate-slide-right.delay-3 { animation-delay: 0.6s; }
+.animate-slide-right.delay-4 { animation-delay: 0.8s; }
+
+/* fIN Animation de gauche vers la droite */
+
+
+/* Animation de droite vers la gauche */
+@keyframes slideLeft {
+    from {
+        opacity: 0;
+        transform: translateX(50px); /* Départ à droite */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Arrivée à la position normale */
+    }
+}
+
+/* Classe pour appliquer la nouvelle animation */
+.animate-slide-left {
+    opacity: 0; /* Initialement invisible */
+}
+
+/* Appliquer l'animation lorsque la classe "visible" est ajoutée */
+.animate-slide-left.visible {
+    animation: slideLeft 1s ease-out forwards;
+}
+
+/* Délai pour chaque élément */
+.animate-slide-left.delay-1 { animation-delay: 0.2s; }
+.animate-slide-left.delay-2 { animation-delay: 0.4s; }
+
+
+
+/* Animation de gauche vers la droite */
+@keyframes slideRight {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animation du haut vers le bas */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Classe pour appliquer l'animation */
+.animate-slide-right, .animate-slide-down {
+    opacity: 0; /* Initialement invisible */
+}
+
+/* Appliquer l'animation lorsque la classe "visible" est ajoutée */
+.animate-slide-right.visible {
+    animation: slideRight 1s ease-out forwards;
+}
+
+.animate-slide-down.visible {
+    animation: slideDown 1s ease-out forwards;
+}
+
+/* Délai pour chaque élément */
+.animate-slide-right.delay-1 { animation-delay: 0.2s; }
+.animate-slide-right.delay-2 { animation-delay: 0.4s; }
+.animate-slide-down.delay-1 { animation-delay: 0.2s; }
+.animate-slide-down.delay-2 { animation-delay: 0.4s; }
+
+.card:hover{
+    transform: scale(2s);
+}
