@@ -103,19 +103,33 @@
     opacity: .8;
 }
 
-@media (max-width: 767px){
+@media (max-width: 768px){
     .header .social i {
-        font-size: 30px;
+        font-size: 24px !important;
     }
 
     .header .roles{
         font-size: 18px !important;
     }
 
+    .about-img{
+        margin-top: 15px;
+        width: 250px !important;
+    }
+
     .about-content{
         flex-direction: column;
     }
 
+    .about-content .lead{
+        padding: 0 15px;
+        text-align: justify;
+    }
+
+    .profile {
+        padding: 0 15px;
+    }
+    
     .stats .stat{
         flex-direction: 0 !important;
         margin-bottom: 40px;
